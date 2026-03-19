@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("/assets/fonts/Quicksand-VariableFont_wght.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cards {
+    border-radius: 0.5rem; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px; 
+  }
+@keyframes moveRight {
+    0%   { transform: translate(0px, 0px) rotate(0deg); }
+    30%  { transform: translate(-100px, 168px) rotate(90deg); }
+    100% { transform: translate(-354px, 76px) rotate(360deg); }
+  }
+.character {
+position: absolute;
+width: 50px;
+height: 50px;
+color: aliceblue;
+animation: moveRight 2s linear forwards;
+animation-delay: 0.5s;
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to{opacity: 1;}
+}
+.intro{
+    opacity: 0;
+    animation: opacity 1s forwards;
+    animation-delay: 2.2s;
+}
